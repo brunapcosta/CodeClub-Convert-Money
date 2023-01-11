@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    line-height: 18px;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    background-color: #F4F4F4;
+}
+
+header {
+    background-color: #1B83E2;
+    height: 66px;
+}
+
+h1 {
+    padding-top: 24px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #F4F4F4;
+    text-align: center;
+}
+
+main {
+    padding: 24px;
+}
+
+label {
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777
+}
+
+select {
+    margin-bottom: 24px;
+    margin-top: 6px;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    padding-left: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+}
+
+input {
+    margin-top: 4px;
+    margin-bottom: 24px;
+    height: 48px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+
+}
+
+button {
+    background-color: #1B83E2;
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 36px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F4F4F4;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.5;
+
+}
+
+section {
+    border: 1px solid #1B83E2;
+    border-radius: 4px;
+} 
+
+.box {
+    text-align: center;
+    padding: 10px;
+}
+
+.nome-moeda {
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+
+
+.valor-moedas {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1B83E2;
+}
+
+
+#seta {
+    margin: 14px auto;
+    display: block;
+}
+
+#japao{
+    height: 44px;
+    width: 44px;
+}
