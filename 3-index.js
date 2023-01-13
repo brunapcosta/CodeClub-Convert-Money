@@ -11,8 +11,8 @@ const peru = 0.7
 
 const convertValues = () => {
     const inputReais = document.getElementById('input-real').value
-    const realValueText = document.getElementById('texto-valor-real')
-    const convertValueText = document.getElementById('text-valor-convertido')
+    const realValueText = document.getElementById('text-real-value')
+    const convertValueText = document.getElementById('text-converted-value')
 
     realValueText.innerHTML = new Intl.NumberFormat('pt-BR',
         { style: 'currency', currency: 'BRL' }
@@ -63,8 +63,8 @@ if (select.value === 'S/ Sol peruano') {
 
 }
 changeCurrency = () => {
-    const currencyName = document.getElementById('nome-moeda')
-    const currencyImg = document.getElementById('pais-conversao')
+    const currencyName = document.getElementById('currency-name')
+    const currencyImg = document.getElementById('country-conversion')
     
     if (select.value === 'US$ Dólar americano') {
         currencyName.innerHTML = "Dólar Americano"

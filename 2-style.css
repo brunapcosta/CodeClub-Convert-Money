@@ -14,15 +14,18 @@ body {
 }
 
 .container {
+    border-radius: 8px;
     width: 375px;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 15px;
-    background-color: #F4F4F4;
+    background-color: #A020F0;
 }
 
 header {
-    background-color: #1B83E2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #4B0082;
     height: 66px;
 }
 
@@ -41,13 +44,13 @@ main {
 label {
     font-weight: 400;
     font-size: 14px;
-    color: #777777
+    color: #FFFFFF;
 }
 
 select {
     margin-bottom: 24px;
     margin-top: 6px;
-    background: #FFFFFF;
+    background: #E0FFFF;
     border: 1px solid #BBBBBB;
     border-radius: 4px;
     height: 48px;
@@ -68,7 +71,7 @@ input {
     margin-bottom: 24px;
     height: 48px;
     width: 100%;
-    background: #FFFFFF;
+    background: #E0FFFF;
     border: 1px solid #BBBBBB;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -81,7 +84,7 @@ input {
 }
 
 button {
-    background-color: #1B83E2;
+    background-color: #4B0082;
     height: 48px;
     width: 100%;
     border: none;
@@ -103,36 +106,32 @@ button:active {
 }
 
 section {
-    border: 1px solid #1B83E2;
+    background-color: #E0FFFF;
+    border: 1px solid #4B0082;
     border-radius: 4px;
-} 
+}
 
 .box {
     text-align: center;
     padding: 10px;
 }
 
-.nome-moeda {
+.curreny-name {
     margin-bottom: 2px;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     color: #777777;
 }
 
 
-.valor-moedas {
+.currency-value {
     font-weight: 700;
     font-size: 20px;
-    color: #1B83E2;
+    color: #4B0082;
 }
 
 
-#seta {
+#arrow {
     margin: 14px auto;
     display: block;
-}
-
-#japao{
-    height: 44px;
-    width: 44px;
 }
