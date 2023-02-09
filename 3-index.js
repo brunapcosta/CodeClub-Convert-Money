@@ -1,6 +1,16 @@
 const button = document.getElementById('convert-button')
 const select = document.getElementById('currency-select')
 
+// USAR QUANDO NÃO POSSUIR O LINK API CONVERSOR
+// const dolar = 5.2
+// const euro = 5.6
+// const bitcoin = 90400.
+// const iene = 25.2
+// const libra = 6.36
+// const peso = 0.025
+// const bolivarVez = 0.2
+// const peru = 0.7
+
 const convertValues = async () => {
     const inputReais = document.getElementById('input-real').value
     const realValueText = document.getElementById('text-real-value')
@@ -116,12 +126,3 @@ changeCurrency = () => {
 button.addEventListener('click', convertValues)
 select.addEventListener('change', changeCurrency)
 
-
-// const dolar = 5.2
-// const euro = 5.6
-// const bitcoin = 90400.
-// const iene = 25.2
-// const libra = 6.36
-// const peso = 0.025
-// const bolivarVez = 0.2
-// const peru = 0.7
