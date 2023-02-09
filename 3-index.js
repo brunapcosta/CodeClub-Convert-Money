@@ -1,18 +1,30 @@
 const button = document.getElementById('convert-button')
 const select = document.getElementById('currency-select')
-const dolar = 5.2
-const euro = 5.6
-const bitcoin = 90400.
-const iene = 25.2
-const libra = 6.36
-const peso = 0.025
-const bolivarVez = 0.2
-const peru = 0.7
+// const dolar = 5.2
+// const euro = 5.6
+// const bitcoin = 90400.
+// const iene = 25.2
+// const libra = 6.36
+// const peso = 0.025
+// const bolivarVez = 0.2
+// const peru = 0.7
 
-const convertValues = () => {
+const convertValues = async () => {
     const inputReais = document.getElementById('input-real').value
     const realValueText = document.getElementById('text-real-value')
     const convertValueText = document.getElementById('text-converted-value')
+
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,JPY-BRL,ARS-BRL,GBP-BRL,VEF-BRL,PEN-BRL").then(Response => Response.json())
+
+    const dolar = data.USDBRL.high
+    const euro = data.EURBRL.high
+    const bitcoin = data.BTCBRL.high
+    const iene = data.JPYBRL.high
+    const peso = data.ARSBRL.high
+    const libra = data.GBPBRL.high
+    const bolivarVez = data.VEFBRL.high
+    const solPeru = data.PENBRL.high
+
 
     realValueText.innerHTML = new Intl.NumberFormat('pt-BR',
         { style: 'currency', currency: 'BRL' }
@@ -58,7 +70,7 @@ if (select.value === 'Bs Bolívar venezuelano') {
 if (select.value === 'S/ Sol peruano') {
         convertValueText.innerHTML = new Intl.NumberFormat('es',
             { style: 'currency', currency: 'PEN' }
-        ).format(inputReais / peru)
+        ).format(inputReais / solPeru)
 }
 
 }
